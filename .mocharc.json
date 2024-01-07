@@ -1,0 +1,7 @@
+{
+    "reporter": "mochawesome",
+    "timeout": "8000",
+    "reporterOptions": {
+        "reportFilename": "testReport"
+      }
+  }

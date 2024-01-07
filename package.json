@@ -1,0 +1,29 @@
+{
+  "name": "contract-tests",
+  "version": "1.0.0",
+  "description": "Contract tests repo",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha 'test/**/*.js'"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonu-puthuk/contract-tests.git"
+  },
+  "author": "Sonu Puthukudi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sonu-puthuk/contract-tests/issues"
+  },
+  "homepage": "https://github.com/sonu-puthuk/contract-tests#readme",
+  "devDependencies": {
+    "chai": "^5.0.0",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "supertest": "^6.3.3"
+  }
+}
