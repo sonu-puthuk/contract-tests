@@ -31,6 +31,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set up environment
-      run: ls 
+      run: |
+          cd contract-tests 
+          npm install
     - name: Run tests
-      run: npm run test
+      run: |
+          cd contract-tests 
+          npm run test
