@@ -30,9 +30,10 @@ jobs:
   run-test:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: Set up environment
       run: |
-          cd contract-tests 
+          cd contract-tests
           npm install
     - name: Run tests
       run: |
