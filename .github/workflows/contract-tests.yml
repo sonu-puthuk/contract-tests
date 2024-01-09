@@ -8,16 +8,16 @@ on:
     inputs:
       author:
         # Friendly description to be shown in the UI instead of 'name'
-        description: 'Person to greet'
+        description: 'PR author'
         # Default value if no value is explicitly provided
-        default: 'dev'
+        default: 'Sonu Puthukudi'
         # Input has to be provided for the workflow to run
         required: true
         # The data type of the input
         type: string
       server:
         # Friendly description to be shown in the UI instead of 'name'
-        description: 'preprod/staging/dev/local'
+        description: 'server (preprod/staging/dev/local)'
         # Default value if no value is explicitly provided
         default: 'local'
         # Input has to be provided for the workflow to run
