@@ -31,6 +31,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set up environment
-      run: npm i
+      run: ls 
     - name: Run tests
       run: npm run test
