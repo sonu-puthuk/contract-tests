@@ -33,9 +33,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up environment
       run: |
-          cd ${{ github.workspace }}/contract-tests
+          cd ../
           npm install
     - name: Run tests
       run: |
-          cd ${{ github.workspace }}/contract-tests 
+          cd ../
           npm run test
