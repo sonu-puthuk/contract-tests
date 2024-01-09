@@ -34,8 +34,10 @@ jobs:
     - name: Set up environment
       run: |
           cd ../
+          ls
           npm install
     - name: Run tests
       run: |
           cd ../
+          ls
           npm run test
