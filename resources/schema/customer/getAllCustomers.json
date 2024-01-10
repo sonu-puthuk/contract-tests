@@ -1,0 +1,120 @@
+{
+    "type": "object",
+    "properties": {
+        "status": {
+            "type": "string"
+        },
+        "page": {
+            "type": "integer"
+        },
+        "totalPages": {
+            "type": "integer"
+        },
+        "data": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        },
+                        "uid": {
+                            "type": "string"
+                        },
+                        "guid": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "customerRef": {
+                            "type": "null"
+                        },
+                        "externalId": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "metaData": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "type"
+                            ]
+                        },
+                        "address": {
+                            "type": "object",
+                            "properties": {
+                                "city": {
+                                    "type": "string"
+                                },
+                                "state": {
+                                    "type": "string"
+                                },
+                                "country": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "city",
+                                "state",
+                                "country"
+                            ]
+                        },
+                        "phone": {
+                            "type": "string"
+                        },
+                        "deletedAt": {
+                            "type": "null"
+                        },
+                        "createdAt": {
+                            "type": "string"
+                        },
+                        "updatedAt": {
+                            "type": "string"
+                        },
+                        "organizationId": {
+                            "type": "string"
+                        },
+                        "mode": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "uid",
+                        "guid",
+                        "name",
+                        "email",
+                        "customerRef",
+                        "externalId",
+                        "description",
+                        "metaData",
+                        "address",
+                        "phone",
+                        "deletedAt",
+                        "createdAt",
+                        "updatedAt",
+                        "organizationId",
+                        "mode"
+                    ]
+                }
+            ]
+        }
+    },
+    "required": [
+        "status",
+        "page",
+        "totalPages",
+        "data"
+    ]
+}

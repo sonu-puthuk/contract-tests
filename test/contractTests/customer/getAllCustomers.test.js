@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import GetAllCustomers from "../../../src/builders/customers/getAllCustomers.js"
+import GetAllCustomers from "../../../src/builders/customer/getAllCustomers.js"
 let getAllCustomers;
 
 describe('Get all customers', function () {
@@ -9,9 +9,14 @@ describe('Get all customers', function () {
             await getAllCustomers.callService();
         })
 
-        it('response status should be 200', function () {
+        it('verify response status is 200', function () {
             const response = getAllCustomers.getResponse;
             expect(response.status).equals(200);
+        })
+
+        it('verify response schema', async function () {
+            const response = getAllCustomers.getResponse;
+            await getAllCustomers.validateSchema();
         })
 
     })

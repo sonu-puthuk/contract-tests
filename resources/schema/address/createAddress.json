@@ -1,0 +1,75 @@
+{
+    "type": "object",
+    "properties": {
+        "status": {
+            "type": "string"
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "asset": {
+                    "type": "string"
+                },
+                "accountId": {
+                    "type": "string"
+                },
+                "addressType": {
+                    "type": "string"
+                },
+                "derivationIndex": {
+                    "type": "integer"
+                },
+                "enableNativeToken": {
+                    "type": "boolean"
+                },
+                "isContract": {
+                    "type": "boolean"
+                },
+                "isChangeAddress": {
+                    "type": "boolean"
+                },
+                "customerId": {
+                    "type": "string"
+                },
+                "deploymentParams": {
+                    "type": "object",
+                    "properties": {
+                        "autoDepoy": {
+                            "type": "boolean"
+                        },
+                        "autoFlush": {
+                            "type": "boolean"
+                        },
+                        "autoFlushErc20": {
+                            "type": "boolean"
+                        }
+                    },
+                    "required": [
+                        "autoDepoy",
+                        "autoFlush",
+                        "autoFlushErc20"
+                    ]
+                }
+            },
+            "required": [
+                "label",
+                "asset",
+                "accountId",
+                "addressType",
+                "derivationIndex",
+                "enableNativeToken",
+                "isContract",
+                "isChangeAddress",
+                "customerId",
+                "deploymentParams"
+            ]
+        }
+    },
+    "required": [
+        "status",
+        "data"
+    ]
+}
