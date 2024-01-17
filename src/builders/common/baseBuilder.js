@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import RequestHelper from "../../helpers/requestHelper.js";
 import { SchemaValidator } from "../../helpers/schemaValidator.js";
-import fs from 'fs/promises'
+import fs from 'fs/promises';
 
 export default class BaseBuilder {
     request = new RequestHelper();
