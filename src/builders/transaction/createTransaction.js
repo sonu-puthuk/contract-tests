@@ -48,6 +48,6 @@ export default class CreateTransaction extends BaseBuilder {
     }
 
     async validateSchema() {
-        await super.validateSchema('address/createAddress.json');
+        await super.validateSchema('transaction/createTransaction.json');
     }
 }

@@ -17,11 +17,10 @@ describe('Create Transaction', function () {
         })
 
         it('verify response data', function () {
-            const response = createTransaction.validateData();
+            createTransaction.validateData();
         })
 
-        it.skip('verify response schema', async function () {
-            const response = createTransaction.getResponse;
+        it('verify response schema', async function () {
             await createTransaction.validateSchema();
         })
 

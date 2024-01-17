@@ -1,0 +1,87 @@
+{
+    "type": "object",
+    "properties": {
+        "status": {
+            "type": "string"
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "walletId": {
+                    "type": "string"
+                },
+                "assetType": {
+                    "type": "string"
+                },
+                "cryptoAmount": {
+                    "type": "number"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "fromAddress": {
+                    "type": "string"
+                },
+                "fee": {
+                    "type": "string"
+                },
+                "feeLimit": {
+                    "type": "integer"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "memo": {
+                    "type": "string"
+                },
+                "operation": {
+                    "type": "string"
+                },
+                "queued": {
+                    "type": "boolean"
+                },
+                "feeAddress": {
+                    "type": "string"
+                },
+                "spenderAddress": {
+                    "type": "string"
+                },
+                "changeAddress": {
+                    "type": "string"
+                },
+                "changeAddressType": {
+                    "type": "string"
+                },
+                "subAccountId": {
+                    "type": "string"
+                },
+                "customerId": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "walletId",
+                "assetType",
+                "cryptoAmount",
+                "address",
+                "fromAddress",
+                "fee",
+                "feeLimit",
+                "description",
+                "memo",
+                "operation",
+                "queued",
+                "feeAddress",
+                "spenderAddress",
+                "changeAddress",
+                "changeAddressType",
+                "subAccountId",
+                "customerId"
+            ]
+        }
+    },
+    "required": [
+        "status",
+        "data"
+    ]
+}

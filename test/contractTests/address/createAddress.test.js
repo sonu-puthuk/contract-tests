@@ -17,7 +17,6 @@ describe('Create Address', function () {
         })
 
         it('verify response schema', async function () {
-            const response = createAddress.getResponse;
             await createAddress.validateSchema();
         })
 
