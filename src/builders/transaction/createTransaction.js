@@ -43,6 +43,8 @@ export default class CreateTransaction extends BaseBuilder {
         return this;
     }
 
+    // this is only a sample validation.
+    // actual validation will involve verification against request params
     validateData() {
         expect(this.getResponse.body.data.fee).equals("50");
     }

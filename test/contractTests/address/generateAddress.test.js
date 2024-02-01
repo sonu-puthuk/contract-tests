@@ -4,7 +4,7 @@ import GenerateAddress from "../../../src/builders/address/generateAddress.js";
 let generateAddress;
 
 describe('Generate Address', function () {
-    describe.only('Positive Tests', function () {
+    describe('Positive Tests', function () {
         before(async function () {
             generateAddress = new GenerateAddress()
             await generateAddress

@@ -9,6 +9,15 @@ export default class BaseBuilder {
     response;
     headers;
     payload;
+    queryParams;
+
+    get getQueryParams() {
+        return this.queryParams;
+    }
+
+    set setQueryParams(value) {
+        this.queryParams = value
+    }
 
     get getPayload() {
         return this.payload;
@@ -33,6 +42,8 @@ export default class BaseBuilder {
     set setResponse(value) {
         this.response = value;
     }
+
+
 
     setDefaultHeaders() {
         this.setHeaders = {

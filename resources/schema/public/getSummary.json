@@ -1,0 +1,56 @@
+{
+    "type": "array",
+    "items": [
+        {
+            "type": "object",
+            "properties": {
+                "trading_pairs": {
+                    "type": "string"
+                },
+                "base_currency": {
+                    "type": "string"
+                },
+                "quote_currency": {
+                    "type": "string"
+                },
+                "last_price": {
+                    "type": "string"
+                },
+                "lowest_ask": {
+                    "type": "string"
+                },
+                "highest_bid": {
+                    "type": "string"
+                },
+                "base_volume": {
+                    "type": "string"
+                },
+                "quote_volume": {
+                    "type": "string"
+                },
+                "price_change_percent_24h": {
+                    "type": "string"
+                },
+                "highest_price_24h": {
+                    "type": "string"
+                },
+                "lowest_price_24h": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "trading_pairs",
+                "base_currency",
+                "quote_currency",
+                "last_price",
+                "lowest_ask",
+                "highest_bid",
+                "base_volume",
+                "quote_volume",
+                "price_change_percent_24h",
+                "highest_price_24h",
+                "lowest_price_24h"
+            ]
+        }
+    ]
+}
